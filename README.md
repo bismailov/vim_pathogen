@@ -1,4 +1,7 @@
-vim_pathogen
-============
+Vim configuration
+=================
 
-My vim configuration, using pathogen for plugin management
+2013-10-04
+Using pathogen for plugin management.
+
+~/.vimrc is also in this git repository, just for backup purposes.
