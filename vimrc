@@ -27,10 +27,17 @@ set hidden
 "Set the color scheme. Change this to your preference.  
 "Here's 100 to choose from: http://www.vim.org/scripts/script.php?script_id=625  
 " colorscheme borland  
-
+" colorscheme twilight
+colorscheme tango2
 " colorscheme molokai
-colorscheme twilight
-"highlight cursor line                                                                                                                  
+" colorscheme zendnb
+" colorscheme satori
+  " syntax enable
+  " set background=dark
+  " colorscheme solarized
+
+
+"highlight cursor line
 set cursorline
 " hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 " hi CursorLine cterm=NONE ctermbg=darkgrey ctermfg=white guibg=darkred guifg=white
@@ -189,9 +196,11 @@ nmap <leader>bv :bel vsp
 " Saves file when Vim window loses focus  
 au FocusLost * :wa  
 " Backups  
-set backupdir=~/.vim/tmp/backup// " backups  
-set directory=~/.vim/tmp/swap// " swap files  
-set backup " enable backup  
+set nobackup
+set noswapfile
+"set backupdir=~/.vim/tmp/backup// " backups  
+"set directory=~/.vim/tmp/swap// " swap files  
+"set backup " enable backup  
 " No more stretching for navigating files  
 "noremap h ;  
 "noremap j h  
@@ -207,3 +216,13 @@ map <S-Right> :tabn<CR>
 map <S-Left>  :tabp<CR>
 
 "removing highlights after search; command is :noh > :nohlsearch
+
+"before pasting big chunks of text, press F2, after pasting, again paste F2
+"from http://nvie.com/posts/how-i-boosted-my-vim/
+set pastetoggle=<F2>
+
+set title
+
+"tagbar config
+let g:tagbar_usearrows = 1
+nnoremap <leader>l :TagbarToggle<CR>
