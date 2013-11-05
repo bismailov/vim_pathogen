@@ -13,6 +13,14 @@ filetype on
 filetype plugin on  
 filetype indent on  
 syntax on  
+
+"vim-instant-markdown parameters
+let g:instant_markdown_slow = 1
+" in your .vimrc. You can then manually trigger preview via the command :InstantMarkdownPreview. 
+" This command is only available inside markdown juffers and when the autostart option is turned off.
+" let g:instant_markdown_autostart = 0
+
+
 "Write the old file out when switching between files.  
 set autowrite  
 "Display current cursor position in lower right corner.  
@@ -28,13 +36,13 @@ set hidden
 "Here's 100 to choose from: http://www.vim.org/scripts/script.php?script_id=625  
 " colorscheme borland  
 " colorscheme twilight
-colorscheme tango2
+" colorscheme tango2
 " colorscheme molokai
 " colorscheme zendnb
-" colorscheme satori
-  " syntax enable
-  " set background=dark
-  " colorscheme solarized
+colorscheme satori
+   " syntax enable
+   " set background=dark
+   " colorscheme solarized
 
 
 "highlight cursor line
