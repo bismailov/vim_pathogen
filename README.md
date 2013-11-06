@@ -114,6 +114,8 @@ https://github.com/tpope/vim-unimpaired
 
 ####For consideration
 
+https://github.com/tpope/vim-dispatch
+
 Gundo :Visualize your undo tree. www.vim.org/scripts/script.php?script_id=3304
 
 https://github.com/kien/ctrlp.vim  
@@ -229,3 +231,13 @@ Vim-unimpaired
 `[b`  
 `[e` move line  
 `]e`
+
+Change inside delimeters  
+You can use a whole set of commands to change text inside brackets / parentheses / quotation marks. It's super useful to avoid having to find the start and finish of the group. Try `ci(, ci{, ci<, ci", ci'` depending on what kind of object you want to change. And the ca(, ca{, ... variants delete the brackets / quotation marks as well.    
+
+Easy to remember: change inside a bracketed statement / change a bracketed statement.})>}) 
+
+`cib/ciB`: Change the text inside the current set of parenthesis () or braces {}, respectively.
+
+
+Another nice list of shortcuts: <http://www.stanford.edu/~jacobm/vim.html>

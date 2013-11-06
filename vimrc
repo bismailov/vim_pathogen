@@ -2,7 +2,8 @@ call pathogen#infect()
 call pathogen#helptags()
 "
 " .vimrc File  
-" " Maintained by: Jeffrey Way 
+" Maintained by Bobir@Ismoilov.com
+" " based on Jeffrey Way config
 " jeffrey@jeffrey-way.com  
 " http://net.tutsplus.com  
 "  
