@@ -60,6 +60,7 @@ Mind map http://overapi.com/static/cs/vim-brain.png
 http://parker0phil.posterous.com/vim-cheat-sheet#!/  
 http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html  
 http://www.fprintf.net/vimCheatSheet.html  
+http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim  
 
 ###Plugins
 

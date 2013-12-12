@@ -37,10 +37,10 @@ set hidden
 "Here's 100 to choose from: http://www.vim.org/scripts/script.php?script_id=625  
 " colorscheme borland  
 " colorscheme twilight
-" colorscheme tango2
+colorscheme tango2
 " colorscheme molokai
 " colorscheme zendnb
-colorscheme satori
+" colorscheme satori
    " syntax enable
    " set background=dark
    " colorscheme solarized
@@ -159,8 +159,9 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'  
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :  
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'  
-"Map escape key to jj -- much faster  
-inoremap jj <esc>  
+"Map escape key to jk -- much faster and compared to jj, won't move in view
+"mode 
+inoremap jk <esc>  
 "Delete all buffers (via Derek Wyatt)  
 nmap <silent> ,da :exec "1," . bufnr('$') . "bd"<cr>  
 "Bubble single lines (kicks butt)  
