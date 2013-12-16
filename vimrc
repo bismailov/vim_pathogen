@@ -14,7 +14,7 @@ filetype on
 filetype plugin on  
 filetype indent on  
 syntax on  
-
+set shortmess+=I "no need for greeting screen
 "vim-instant-markdown parameters
 let g:instant_markdown_slow = 1
 " in your .vimrc. You can then manually trigger preview via the command :InstantMarkdownPreview. 
@@ -25,6 +25,7 @@ let g:instant_markdown_slow = 1
 "Write the old file out when switching between files.  
 set autowrite  
 "Display current cursor position in lower right corner.  
+"display
 set ruler  
 "Want a different map leader than \  
 let mapleader = ","  
@@ -162,6 +163,11 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 "Map escape key to jk -- much faster and compared to jj, won't move in view
 "mode 
 inoremap jk <esc>  
+"To move by rows, not by lines
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
 "Delete all buffers (via Derek Wyatt)  
 nmap <silent> ,da :exec "1," . bufnr('$') . "bd"<cr>  
 "Bubble single lines (kicks butt)  
