@@ -144,7 +144,10 @@ let g:user_zen_expandabbr_key = '<C-e>'
 "Faster shortcut for commenting. Requires T-Comment plugin  
 map <leader>c <c-_><c-_>  
 "Saves time; maps the spacebar to colon  
-nmap <space> :  
+"nmap <space> :  
+"Let's map space for toggling folds
+nnoremap <space> za
+vnoremap <space> zf
 "Automatically change current directory to that of the file in the buffer  
 autocmd BufEnter * cd %:p:h  
 "Map code completion to , + tab  

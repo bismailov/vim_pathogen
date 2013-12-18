@@ -46,6 +46,7 @@ http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-do
 http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen/  
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/  
 Some config tips: http://nvie.com/posts/how-i-boosted-my-vim/  
+Nice post: http://statico.github.io/vim.html http://statico.github.io/vim2.html  
 
 ###Cheatsheets
 
@@ -146,7 +147,7 @@ http://stackoverflow.com/questions/1737163/vim-traversing-text-in-insert-mode/17
 
 From ~/.vimrc  
 `<leader>` is set to “,”  
-`<space>` is set to ":"  
+`<space>` is set to toggling folds (za, zc, zo...)  
 
 `<leader>nt`: NERDTreeToggle  
 
@@ -173,6 +174,7 @@ C+PgUp map <S-Right> :tabn<CR>
 C+PgDwn map <S-Left>  :tabp<CR>  
 
 From NERDTree  
+Press ? for help
 use C-ww to move around (1 C-ww for NT, or C-w h/j/k/l)  
 t (or T) opens a file in a new tab (T keeps the focus on the current tab)  
 m opens menu
@@ -183,6 +185,8 @@ Command-T
 `<leader>b` starts buffers  
 C-j, C-k move up and down  
 C-c cancels
+
+Current word search with '\*' and '#'
 
 delimitMate `:help delimitMate`  
 automatically closes parentheses and etc  
@@ -242,3 +246,9 @@ Easy to remember: change inside a bracketed statement / change a bracketed state
 
 
 Another nice list of shortcuts: <http://www.stanford.edu/~jacobm/vim.html>
+
+
+*q:*
+
+That brings up an interactive history of : commands, you can edit them, and to
+run one you hit "enter" on the line
