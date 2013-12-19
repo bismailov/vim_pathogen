@@ -257,3 +257,40 @@ set statusline+=%=      "left/right separator
 set statusline+=%c,     "cursor column
 set statusline+=%l/%L   "cursor line/total lines
 set statusline+=\ %P    "percent through file
+
+
+"helper functions for Command+T
+function! Git_Repo_Cdup() " Get the relative path to repo root
+    "Ask git for the root of the git repo (as a relative '../../' path)
+    let git_top = system('git rev-parse --show-cdup')
+    let git_fail = 'fatal: Not a git repository'
+    if strpart(git_top, 0, strlen(git_fail)) == git_fail
+        " Above line says we are not in git repo. Ugly. Better version?
+        return ''
+    else
+        " Return the cdup path to the root. If already in root,
+        " path will be empty, so add './'
+        return './' . git_top
+    endif
+endfunction
+
+function! CD_Git_Root()
+    execute 'cd '.Git_Repo_Cdup()
+    let curdir = getcwd()
+    echo 'CWD now set to: '.curdir
+endfunction
+nnoremap <LEADER>gr :call CD_Git_Root()<cr>
+
+
+"ignore lists for CtrlP
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " MacOSX/Linux
+" set wildignore+=*\\tmp\\*,*.swp,*.zip,*.exe  " Windows
+"
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
+  \ 'file': '\v\.(exe|so|dll)$',
+  \ 'link': 'some_bad_symbolic_links',
+  \ }
+
+
+

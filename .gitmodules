@@ -28,3 +28,6 @@
 [submodule "vim-css-color"]
 	path = vim-css-color
 	url = git@github.com:ap/vim-css-color.git
+[submodule "bundle/ctrlp"]
+	path = bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git

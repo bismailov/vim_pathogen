@@ -181,10 +181,21 @@ m opens menu
 r reloads NT  
 
 Command-T  
+`<leader>gr` sets current folder to the Git root  
 `<leader>t` starts search  
 `<leader>b` starts buffers  
 C-j, C-k move up and down  
 C-c cancels
+
+CtrlP  
+Analogous to Command-T, more convenient because will search from project root.  
+
+ - Use `<c-p>` to search files
+ - Use `<c-j>`, `<c-k>` or the arrow keys to navigate the result list.
+ - Use `<c-t>` or `<c-v>`, `<c-x>` to open the selected entry in a new tab or in a new split.
+ - Use `<c-n>`, `<c-p>` to select the next/previous string in the prompt's history.
+ - Use `<c-y>` to create a new file and its parent directories.
+ - Use `<c-z>` to mark/unmark multiple files and `<c-o>` to open them.
 
 Current word search with '\*' and '#'
 
