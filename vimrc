@@ -246,6 +246,11 @@ set title
 let g:tagbar_usearrows = 1
 nnoremap <leader>l :TagbarToggle<CR>
  
+"to generate tags file, in project's root folder run 
+"ctags -R
+"http://vim.wikia.com/wiki/Single_tags_file_for_a_source_tree
+set tags=tags;
+
 set statusline=%t       "tail of the filename
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
 set statusline+=%{&ff}] "file format

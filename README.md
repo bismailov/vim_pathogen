@@ -47,6 +47,8 @@ http://tammersaleh.com/posts/the-modern-vim-config-with-pathogen/
 http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/  
 Some config tips: http://nvie.com/posts/how-i-boosted-my-vim/  
 Nice post: http://statico.github.io/vim.html http://statico.github.io/vim2.html  
+More advanced:
+http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim  
 
 ###Cheatsheets
 
@@ -228,7 +230,11 @@ http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations
 ctrl+O   <- -> ctrl+I (tab)
 
 Tagbar  
-`<leader>l` (L) shows tagbar, functions, tags
+`<leader>l` (L) shows tagbar, functions, tags  
+To generate tags file, run `ctags -R` in project's root folder.   
+`<c-]>` to jump for tag definition  
+`<c-o>` to jump back
+
 
 Buffers  
 :ls, :buffers, :files -- show buffers  
