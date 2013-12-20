@@ -263,3 +263,11 @@ Another nice list of shortcuts: <http://www.stanford.edu/~jacobm/vim.html>
 
 That brings up an interactive history of : commands, you can edit them, and to
 run one you hit "enter" on the line
+
+Indenting text  
+
+ - To reindent whole buffer `gg=G`  
+ - To use markers: `ma` mark top of block to indent as marker 'a'  
+...move cursor to end location  
+`>'a`    Indent from marker 'a' to current location  
+`='a` to reindent.
