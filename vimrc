@@ -235,7 +235,7 @@ map <S-Right> :tabn<CR>
 map <S-Left>  :tabp<CR>
 
 "removing highlights after search; command is :noh > :nohlsearch
-
+map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 "before pasting big chunks of text, press F2, after pasting, again paste F2
 "from http://nvie.com/posts/how-i-boosted-my-vim/
 set pastetoggle=<F2>
@@ -251,7 +251,8 @@ nnoremap <leader>l :TagbarToggle<CR>
 "http://vim.wikia.com/wiki/Single_tags_file_for_a_source_tree
 set tags=tags;
 
-set statusline=%t       "tail of the filename
+" set statusline=%t       "tail of the filename
+set statusline=%F       "full file name
 set statusline+=[%{strlen(&fenc)?&fenc:'none'}, "file encoding
 set statusline+=%{&ff}] "file format
 set statusline+=%h      "help file flag

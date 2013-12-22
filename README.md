@@ -64,6 +64,7 @@ http://parker0phil.posterous.com/vim-cheat-sheet#!/
 http://www.viemu.com/a_vi_vim_graphical_cheat_sheet_tutorial.html  
 http://www.fprintf.net/vimCheatSheet.html  
 http://stackoverflow.com/questions/1218390/what-is-your-most-productive-shortcut-with-vim  
+Nice one: http://tnerual.eriogerg.free.fr/vimqrc.html
 
 ###Plugins
 
@@ -227,7 +228,8 @@ look also zr/zR and zm/zM
 Jumplists  
 http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations  
 :jumps  
-ctrl+O   <- -> ctrl+I (tab)
+ctrl+O   <- -> ctrl+I (tab)  
+ctrl+O is used in Tagbar as well.  
 
 Tagbar  
 `<leader>l` (L) shows tagbar, functions, tags  
