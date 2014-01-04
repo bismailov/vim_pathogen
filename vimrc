@@ -86,7 +86,9 @@ set linespace=3
 "Better line wrapping  
 set wrap  
 set textwidth=79  
-set formatoptions=qrn1  
+" set formatoptions=qrn1t  
+set formatoptions=1  
+set linebreak
 "Set incremental searching"  
 set incsearch  
 "Highlight searching  
@@ -231,10 +233,14 @@ set showmatch " show matching brackets
 map! ;h <a href=""></a><ESC>5hi
 "to move between open panels,
 "http://stackoverflow.com/questions/2413005/switching-between-tabs-in-nerdtree/13398056#13398056
-map <S-Right> :tabn<CR>
-map <S-Left>  :tabp<CR>
+" map <c-Right> :tabn<CR>
+" map <c-Left>  :tabp<CR>
+
+"Just use gt gT to move between tabs
+
 
 "removing highlights after search; command is :noh > :nohlsearch
+"first fun <leader>gr to move to root of the project
 map <F4> :execute "vimgrep /" . expand("<cword>") . "/j **" <Bar> cw<CR>
 "before pasting big chunks of text, press F2, after pasting, again paste F2
 "from http://nvie.com/posts/how-i-boosted-my-vim/
@@ -298,5 +304,6 @@ let g:ctrlp_custom_ignore = {
   \ 'link': 'some_bad_symbolic_links',
   \ }
 
-
+" make the splitters between windows be blank
+set fillchars=vert:\ ,stl:\ ,stlnc:\
 
