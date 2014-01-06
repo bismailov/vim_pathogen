@@ -308,3 +308,9 @@ Git addon
 - `:Gmove target_path`, if you supply "/", it is relative to git repository. 
 - `:Gcommit`  
 - `:Gblame`  
+
+#####Rails.vim
+
+There are two plugins -- Rails.vim and Bundle.vim by Tim Pope. Also, added
+dbext plugin, which enables for running `:Select * from users` in Rails project
+directory.

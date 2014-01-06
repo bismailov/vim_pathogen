@@ -38,7 +38,8 @@ set hidden
 "Here's 100 to choose from: http://www.vim.org/scripts/script.php?script_id=625  
 " colorscheme borland  
 " colorscheme twilight
-colorscheme tango2
+" colorscheme tango2
+colorscheme vividchalk "supports rails.vim plugin
 " colorscheme molokai
 " colorscheme zendnb
 " colorscheme satori
@@ -307,3 +308,11 @@ let g:ctrlp_custom_ignore = {
 " make the splitters between windows be blank
 set fillchars=vert:\ ,stl:\ ,stlnc:\
 
+"Distraction free settings
+" highlight NonText ctermfg=black   " Match the tildes to your background
+" set laststatus=0                  " No statusbar
+" set nonumber                      " No line numbering
+" set showtabline=0                 " don't show the tab bar
+" set foldcolumn=4                  " Add a left margin
+" highlight! link FoldColumn Normal " Make it the background colour
+" set wrapmargin=8                  " Add a right margin, sort of
