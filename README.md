@@ -314,3 +314,7 @@ Git addon
 There are two plugins -- Rails.vim and Bundle.vim by Tim Pope. Also, added
 dbext plugin, which enables for running `:Select * from users` in Rails project
 directory.
+
+#####Surround plugin
+https://github.com/tpope/vim-surround  
+`ds"` to remove double quotes.

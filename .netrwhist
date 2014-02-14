@@ -1,3 +1,8 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =1
+let g:netrw_dirhist_cnt =6
 let g:netrw_dirhist_1='/home/bismailov/Desktop/my_docs/Inbox/ror/cyrillizer/lib/cyrillizer'
+let g:netrw_dirhist_2='/home/bismailov/.vim/indentLine'
+let g:netrw_dirhist_3='/home/bismailov/.freetalk'
+let g:netrw_dirhist_4='/mnt/sdb3/backups/pandora_local/shared/misc/books/English'
+let g:netrw_dirhist_5='/home/bismailov/Desktop/my_docs/Inbox/ror/soqqa/db'
+let g:netrw_dirhist_6='/home/bismailov/Downloads/BFBC2+DLC Mytorrents Mp/ВАЖНЫЙ ФАЙЛ!!!'
