@@ -16,20 +16,32 @@ So, `ln -s ~/.vim/vimrc ~/.vimrc`
 
 I'll try to install everything through Tim Pope's [Pathogen](https://github.com/tpope/vim-pathogen).
 
-For regular install with Pathogen:
+####For regular install with Pathogen:
 
     cd ~/.vim
     git submodule add git://github.com/Raimondi/delimitMate.git bundle/delmitmate
     git submodule init && git submodule update
 or `git submodule update --init`  
 
-    vim
+####vim
 
 For installing Vimballs (from pathogen github page):
 
     :e plugin.vba
     :!mkdir ~/.vim/bundle/plugin
     :UseVimball ~/.vim/bundle/plugin
+
+###Installing on other computer
+
+    $ cd ~
+    $ rm .vimrc
+    $ rm .vim -rf
+    $ git clone git://github.com/bismailov/vim_pathogen.git .vim
+    $ ln -s .vim/vimrc .vimrc
+    $ cd .vim
+    $ git submodule init
+    $ git submodule update
+
 
 ###Why Vim, tips and tricks
 
