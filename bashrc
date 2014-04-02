@@ -112,8 +112,12 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 ### Added by the Heroku Toolbelt
 # export PATH="/usr/local/heroku/bin:$PATH"
-export PATH="$PATH:/usr/local/heroku/bin"
+#export PATH="$PATH:/usr/local/heroku/bin"
 
 ### bismailov disable Ctrl+s/q terminal suspension
 ### otherwise interferes with vim shortcuts
 stty -ixon -ixoff
+
+source /etc/profile.d/rvm.sh
+
+alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'

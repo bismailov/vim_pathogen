@@ -6,5 +6,4 @@ xautolock -time 11 -locker "gnome-screensaver-command -l" -notify 10   -notifier
 yakuake &
 empathy &
 # tasque &
-#deluge &
-
+deluge &
