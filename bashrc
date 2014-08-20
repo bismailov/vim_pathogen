@@ -121,3 +121,7 @@ stty -ixon -ixoff
 source /etc/profile.d/rvm.sh
 
 alias bat='upower -i /org/freedesktop/UPower/devices/battery_BAT0| grep -E "state|to\ full|percentage"'
+
+# The following added to fix an annoying behaviour of tmux.
+# http://superuser.com/questions/800366/after-each-command-tmux-prints-ps1-update-command-not-found
+PROMPT_COMMAND=

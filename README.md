@@ -86,17 +86,47 @@ Nice one: http://tnerual.eriogerg.free.fr/vimqrc.html
 http://www.vim.org/scripts/script.php?script_id=3025  
 http://git.wincent.com/command-t.git/blob_plain/HEAD:/doc/command-t.txt
 
+Make sure that ruby in vim build is the same with system vim. While in command
+line, 'rvm use system', if the system ruby is the same one used in vim build.
+
+`<leader>gr` sets current folder to the Git root  
+`<leader>t` starts search  
+`<leader>b` starts buffers  
+C-j, C-k move up and down  
+C-c cancels
+
 #####NERDTree  
 https://github.com/scrooloose/nerdtree
+
+Press ? for help
+use C-ww to move around (1 C-ww for NT, or C-w h/j/k/l)  
+t (or T) opens a file in a new tab (T keeps the focus on the current tab)  
+m opens menu
+r reloads NT  
+
+`<leader>nt`: NERDTreeToggle  
 
 #####DelimitMate  
 git submodule add git://github.com/Raimondi/delimitMate.git bundle/delmitmate
 
+`:help delimitMate`  
+automatically closes parentheses and etc  
+`shift + tab` to move outside of the pair
+
 #####TComment  
 https://github.com/tomtom/tcomment_vim
 
+gc{motion}: Toggle comments (for small comments within one line the &filetype_inline style will be used, if defined)  
+gcc: Toggle comment for the current line 
+gcip: Toggle for (inner) paragraph
+gC{motion}: Comment region 
+gCc: Comment the current line 
+
 #####Solarized color scheme  
 http://ethanschoonover.com/solarized/vim-colors-solarized
+
+#####Vividchalk color scheme  
+https://github.com/tpope/vim-vividchalk.git
 
 #####Colors pack  
 http://www.vim.org/scripts/script.php?script_id=625  
@@ -113,6 +143,12 @@ http://www.vim.org/scripts/script.php?script_id=625
     git submodule add git://github.com/majutsushi/tagbar.git bundle/tagbar
     git submodule init && git submodule update
 
+`<leader>l` (L) shows tagbar, functions, tags  
+To generate tags file, run `ctags -R` in project's root folder.   
+`<c-]>` to jump for tag definition  
+`<c-o>` to jump back
+
+
 #####Fugitive  
     git submodule add git://github.com/tpope/vim-fugitive.git bundle/fugitive
 
@@ -128,6 +164,54 @@ For Markdown realtime preview: https://github.com/suan/vim-instant-markdown
 
 #####Vim-unimpaired  
 https://github.com/tpope/vim-unimpaired
+
+`]<space>` add empty line  
+`[<space>`  
+`]b` change buffers  
+`[b`  
+`[e` move line  
+`]e`
+
+#####CtrlP    
+Search files and folders  
+Analogous to Command-T, more convenient because will search from project root.  
+
+ - Use `<c-p>` to search files
+ - Use `<c-j>`, `<c-k>` or the arrow keys to navigate the result list.
+ - Use `<c-t>` or `<c-v>`, `<c-x>` to open the selected entry in a new tab or in a new split.
+ - Use `<c-n>`, `<c-p>` to select the next/previous string in the prompt's history.
+ - Use `<c-y>` to create a new file and its parent directories.
+
+
+#####Omnicomplete  
+Not active; CtrlP instead.  
+C-p: list of words; selection is C-p and C-n (might not work in Guake/Yakuake, new tab command)
+
+
+#####indentLine
+
+This plugin puts vertical lines for indentation separation
+
+https://github.com/Yggdroot/indentLine.git
+
+#####Fugitive
+Git addon  
+- `:Gread` -- :Git checkout % (% is a current open file in vim)  
+- `:Gwrite` -- :Git add %  
+- `:Gremove` -- :Git rm %  
+- `:Gmove target_path`, if you supply "/", it is relative to git repository. 
+- `:Gcommit`  
+- `:Gblame`  
+
+#####Rails.vim
+
+There are two plugins -- Rails.vim and Bundle.vim by Tim Pope. Also, added
+dbext plugin, which enables for running `:Select * from users` in Rails project
+directory.
+
+#####Surround plugin
+https://github.com/tpope/vim-surround  
+`ds"` to remove double quotes.
 
 *Actually there are more, look at .vim/bundle directory.*
 
@@ -186,7 +270,6 @@ http://vim.wikia.com/wiki/Avoid_the_escape_key
 
 > `ctrl-ww`: this will move between open windows
 
-
 #####Tab movement  
 You can change the tabs by `ctrl-pgup` and `ctrl-pgdown`  
 C+PgUp map <S-Right> :tabn<CR>  
@@ -194,54 +277,10 @@ C+PgDwn map <S-Left>  :tabp<CR>
 
 If these don't work, just use `gt` `gT` to move between tabs
 
-
-
-#####From NERDTree  
-Press ? for help
-use C-ww to move around (1 C-ww for NT, or C-w h/j/k/l)  
-t (or T) opens a file in a new tab (T keeps the focus on the current tab)  
-m opens menu
-r reloads NT  
-
-#####Command-T  
-`<leader>gr` sets current folder to the Git root  
-`<leader>t` starts search  
-`<leader>b` starts buffers  
-C-j, C-k move up and down  
-C-c cancels
-
-#####CtrlP    
-Search files and folders  
-Analogous to Command-T, more convenient because will search from project root.  
-
- - Use `<c-p>` to search files
- - Use `<c-j>`, `<c-k>` or the arrow keys to navigate the result list.
- - Use `<c-t>` or `<c-v>`, `<c-x>` to open the selected entry in a new tab or in a new split.
- - Use `<c-n>`, `<c-p>` to select the next/previous string in the prompt's history.
- - Use `<c-y>` to create a new file and its parent directories.
- - Use `<c-z>` to mark/unmark multiple files and `<c-o>` to open them.
-
 #####`F4`: find in files the current word  
 First run `<leader>gr` to move to the root of the project.
 
-
 #####Current word search with '\*' and '#'
-
-#####delimitMate 
-`:help delimitMate`  
-automatically closes parentheses and etc  
-`shift + tab` to move outside of the pair
-
-#####TComment  
-gc{motion}: Toggle comments (for small comments within one line the &filetype_inline style will be used, if defined)  
-gcc: Toggle comment for the current line 
-gcip: Toggle for (inner) paragraph
-gC{motion}: Comment region 
-gCc: Comment the current line 
-
-#####Omnicomplete  
-Not active; CtrlP instead.  
-C-p: list of words; selection is C-p and C-n (might not work in Guake/Yakuake, new tab command)
 
 #####From Vi & Vim book  
 press J (shift+j) to join the two lines
@@ -259,12 +298,6 @@ http://vim.wikia.com/wiki/Jumping_to_previously_visited_locations
 ctrl+O   <- -> ctrl+I (tab)  
 ctrl+O is used in Tagbar as well.  
 
-#####Tagbar  
-`<leader>l` (L) shows tagbar, functions, tags  
-To generate tags file, run `ctags -R` in project's root folder.   
-`<c-]>` to jump for tag definition  
-`<c-o>` to jump back
-
 
 #####Buffers  
 :ls, :buffers, :files -- show buffers  
@@ -276,13 +309,6 @@ http://vim.wikia.com/wiki/Easier_buffer_switching
 http://vim.wikia.com/wiki/Buffers  
 http://vim.wikia.com/wiki/Vim_buffer_FAQ  
 
-#####Vim-unimpaired  
-`]<space>` add empty line  
-`[<space>`  
-`]b` change buffers  
-`[b`  
-`[e` move line  
-`]e`
 
 #####Change inside delimeters  
 You can use a whole set of commands to change text inside brackets / parentheses / quotation marks. It's super useful to avoid having to find the start and finish of the group. Try `ci(, ci{, ci<, ci", ci'` depending on what kind of object you want to change. And the ca(, ca{, ... variants delete the brackets / quotation marks as well.    
@@ -312,21 +338,3 @@ e='a` to reindent.
 #####Opening files 
 in splits `-o` and vertical splits `-O` from command line  
 
-#####Fugitive
-Git addon  
-- `:Gread` -- :Git checkout % (% is a current open file in vim)  
-- `:Gwrite` -- :Git add %  
-- `:Gremove` -- :Git rm %  
-- `:Gmove target_path`, if you supply "/", it is relative to git repository. 
-- `:Gcommit`  
-- `:Gblame`  
-
-#####Rails.vim
-
-There are two plugins -- Rails.vim and Bundle.vim by Tim Pope. Also, added
-dbext plugin, which enables for running `:Select * from users` in Rails project
-directory.
-
-#####Surround plugin
-https://github.com/tpope/vim-surround  
-`ds"` to remove double quotes.
