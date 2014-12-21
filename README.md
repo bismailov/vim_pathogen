@@ -336,5 +336,7 @@ e='a` to reindent.
 
 
 #####Opening files 
-in splits `-o` and vertical splits `-O` from command line  
+in splits `-o` and vertical splits `-O` from command line
 
+#####Writing protected files
+:w!! file.txt
