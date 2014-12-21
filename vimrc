@@ -311,3 +311,6 @@ set fillchars=vert:\ ,stl:\ ,stlnc:\
 " let g:indentLine_char = '│',  '¦', '┆'
 
 "removing search highlight: /asd
+
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+cmap w!! w !sudo tee > /dev/null %
