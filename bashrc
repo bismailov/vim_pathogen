@@ -86,7 +86,7 @@ fi
 alias ll='ls -lF'
 alias la='ls -A'
 alias l='ls -CF'
-alias қ='cat my_docs/unsorted.wordlist.txt | grep '
+alias қ='cat ~/my_docs/unsorted.wordlist.txt | grep '
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
