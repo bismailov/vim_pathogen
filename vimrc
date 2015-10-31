@@ -314,3 +314,11 @@ set fillchars=vert:\ ,stl:\ ,stlnc:\
 
 " Allow saving of files as sudo when I forgot to start vim using sudo.
 cmap w!! w !sudo tee > /dev/null %
+
+"https://superuser.com/questions/302186/vim-scrolls-very-slow-when-a-line-is-too-long
+" Syntax coloring lines that are too long just slows down the world
+set synmaxcol=128
+
+set ttyfast " u got a fast terminal
+set ttyscroll=3
+set lazyredraw " to avoid scrolling problems
