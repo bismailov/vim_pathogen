@@ -7,6 +7,8 @@
   * [Cheatsheets](#cheatsheets)
   * [Plugins](#plugins)
     * [Installed](#installed)
+    * [For consideration](#for-consideration)
+  * [Vim shortcuts](#vim-shortcuts)
 
 
 Vim configuration
@@ -227,6 +229,8 @@ https://github.com/tpope/vim-surround
 *Actually there are more, look at .vim/bundle directory.*
 
 ####For consideration
+
+https://github.com/tmm1/ripper-tags
 
 https://github.com/tpope/vim-dispatch
 
