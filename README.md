@@ -1,6 +1,10 @@
 #####Contents
   * [Vim configuration](#vim-configuration)
   * [For regular install with Pathogen](#for-regular-install-with-pathogen)
+  * [Vim](#vim)
+  * [Installing on other computer](#installing-on-other-computer)
+  * [Why Vim, tips and tricks](#why-vim-tips-and-tricks)
+  * [Cheatsheets](#cheatsheets)
 
 
 Vim configuration
