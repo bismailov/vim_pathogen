@@ -5,6 +5,8 @@
   * [Installing on other computer](#installing-on-other-computer)
   * [Why Vim, tips and tricks](#why-vim-tips-and-tricks)
   * [Cheatsheets](#cheatsheets)
+  * [Plugins](#plugins)
+    * [Installed](#installed)
 
 
 Vim configuration
