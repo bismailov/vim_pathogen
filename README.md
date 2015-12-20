@@ -232,9 +232,11 @@ https://github.com/tpope/vim-surround
 
 https://github.com/tmm1/ripper-tags
 
+https://github.com/tpope/vim-bundler
+
 https://github.com/tpope/vim-dispatch
 
-Gundo :Visualize your undo tree. www.vim.org/scripts/script.php?script_id=3304
+Gundo: Visualize your undo tree. www.vim.org/scripts/script.php?script_id=3304
 
 https://github.com/kien/ctrlp.vim  
 http://kien.github.io/ctrlp.vim/#installation
