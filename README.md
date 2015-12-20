@@ -1,3 +1,7 @@
+#####Contents
+[Vim configuration](#vim-configuration)
+
+
 Vim configuration
 =================
 
