@@ -1,6 +1,6 @@
 #####Contents
-[Vim configuration](#vim-configuration)
-[For regular install with Pathogen](#for-regular-install-with-pathogen)
+  * [Vim configuration](#vim-configuration)
+  * [For regular install with Pathogen](#for-regular-install-with-pathogen)
 
 
 Vim configuration
