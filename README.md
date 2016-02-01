@@ -9,6 +9,7 @@
     * [Installed](#installed)
     * [For consideration](#for-consideration)
   * [Vim shortcuts](#vim-shortcuts)
+  * [XMonad](#xmonad)
 
 
 Vim configuration
@@ -357,3 +358,7 @@ in splits `-o` and vertical splits `-O` from command line
 
 #####Writing protected files
 :w!! file.txt
+
+XMonad
+===========
+https://github.com/davidbrewer/xmonad-ubuntu-conf
