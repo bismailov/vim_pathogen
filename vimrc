@@ -36,11 +36,11 @@ set timeoutlen=500
 set hidden  
 "Set the color scheme. Change this to your preference.  
 "Here's 100 to choose from: http://www.vim.org/scripts/script.php?script_id=625  
-" colorscheme borland  
+colorscheme borland  
 " colorscheme twilight
 " colorscheme tango2
 " colorscheme vividchalk "supports rails.vim plugin
-colorscheme molokai
+" colorscheme molokai
 " colorscheme zendnb
 " colorscheme satori
    " syntax enable
