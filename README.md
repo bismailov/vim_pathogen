@@ -56,12 +56,11 @@ For installing Vimballs (from pathogen github page):
     $ git submodule init
 
 In case of error fatal: no submodule mapping found in .gitmodules for path 'bundle/xxxx' do
+    
     $ git rm --cached 'bundle/xxxx' 
     
     $ git submodule update
     
-In case of error '
-
 
 ###Why Vim, tips and tricks
 
