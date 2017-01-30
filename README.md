@@ -1,8 +1,8 @@
 #####Contents
   * [Vim configuration](#vim-configuration)
-  * [For regular install with Pathogen](#for-regular-install-with-pathogen)
+  * [For regular install of module with Pathogen](#for-regular-install-of-a-module-with-pathogen)
   * [Vim](#vim)
-  * [Installing on other computer](#installing-on-other-computer)
+  * [Replicationg on a new machine](#installing-on-a-new-machine)
   * [Why Vim, tips and tricks](#why-vim-tips-and-tricks)
   * [Cheatsheets](#cheatsheets)
   * [Plugins](#plugins)
@@ -30,7 +30,7 @@ So, `ln -s ~/.vim/vimrc ~/.vimrc`
 
 I'll try to install everything through Tim Pope's [Pathogen](https://github.com/tpope/vim-pathogen).
 
-####For regular install with Pathogen:
+####For regular install of a module with Pathogen:
 
     cd ~/.vim
     git submodule add git://github.com/Raimondi/delimitMate.git bundle/delmitmate
@@ -45,7 +45,7 @@ For installing Vimballs (from pathogen github page):
     :!mkdir ~/.vim/bundle/plugin
     :UseVimball ~/.vim/bundle/plugin
 
-###Installing on other computer
+###Replicating on a new machine
 
     $ cd ~
     $ rm .vimrc
@@ -54,7 +54,13 @@ For installing Vimballs (from pathogen github page):
     $ ln -s .vim/vimrc .vimrc
     $ cd .vim
     $ git submodule init
+
+In case of error fatal: no submodule mapping found in .gitmodules for path 'bundle/xxxx' do
+    $ git rm --cached 'bundle/xxxx' 
+    
     $ git submodule update
+    
+In case of error '
 
 
 ###Why Vim, tips and tricks
