@@ -2,7 +2,7 @@
   * [Vim configuration](#vim-configuration)
   * [For regular install of module with Pathogen](#for-regular-install-of-a-module-with-pathogen)
   * [Vim](#vim)
-  * [Replicationg on a new machine](#installing-on-a-new-machine)
+  * [Replicationg on a new machine](#replicating-on-a-new-machine)
   * [Why Vim, tips and tricks](#why-vim-tips-and-tricks)
   * [Cheatsheets](#cheatsheets)
   * [Plugins](#plugins)
