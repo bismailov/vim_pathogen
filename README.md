@@ -367,3 +367,19 @@ in splits `-o` and vertical splits `-O` from command line
 XMonad
 ===========
 https://github.com/davidbrewer/xmonad-ubuntu-conf
+
+Adding multiple language support:
+
+In .xsessionrc add language config
+
+#!/usr/bin/env bash
+# setxkbmap -option "grp:lwin_toggle,grp_led:scroll,ctrl:nocaps" -layout "us,ru,uz"
+setxkbmap -option "grp:alt_shift_toggle,grp_led:scroll,ctrl:nocaps" -layout "us,ru,uz"
+# per window keyboard layout
+# kbdd
+xautolock -time 11 -locker "gnome-screensaver-command -l" -notify 10   -notifier "notify-send -t 5000 -i gtk-dialog-info 'Locking in 10 seconds'" &
+yakuake &
+
+
+To show keyboard indicator on top bar:
+http://askubuntu.com/a/561596
