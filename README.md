@@ -383,3 +383,20 @@ In .xsessionrc add language config
 
 To show keyboard indicator on top bar:
 http://askubuntu.com/a/561596
+
+Power management
+
+Add following shortcuts to xmonad.hs
+
+    myKeyBindings =
+       [
+         -- sleep with Mod + Shift + s
+         , ((myModMask .|. shiftMask, xK_s), spawn "systemctl suspend")
+         , ((myModMask .|. shiftMask, xK_h), spawn "sudo systemctl hibernate")
+       ]
+
+Also, add permission to sudoers:
+
+    sudo visudo
+    
+    bismailov ALL=NOPASSWD: /bin/systemctl hibernate
