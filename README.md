@@ -392,6 +392,7 @@ Add following shortcuts to xmonad.hs
        [
          -- sleep with Mod + Shift + s
          , ((myModMask .|. shiftMask, xK_s), spawn "systemctl suspend")
+         -- hibernate with Mod + Shift + h
          , ((myModMask .|. shiftMask, xK_h), spawn "sudo systemctl hibernate")
        ]
 
