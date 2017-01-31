@@ -409,4 +409,7 @@ To autostart add the following to ~.xmonad/startup-hook
     xautolock -time 11 -locker "gnome-screensaver-command -l" -notify 10 -notifier "notify-send -t 5000 -i gtk-dialog-info 'Locking in 10 seconds'" &
     #per window keyboard layout
     kbdd &
+    
+    #to find out monitor name, run xrandr with no argument; also, arandr is handy
+    xrandr --output eDP1 --mode 1600x900 &
 
