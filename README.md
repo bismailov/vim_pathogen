@@ -400,4 +400,13 @@ Also, add permission to sudoers:
 
     sudo visudo
     
-    bismailov ALL=NOPASSWD: /bin/systemctl hibernate
+    <username> ALL=NOPASSWD: /bin/systemctl hibernate
+    
+To autostart add the following to ~.xmonad/startup-hook
+
+    yakuake &
+    setxkbmap -option "grp:alt_shift_toggle,grp_led:scroll,ctrl:nocaps" -layout "us,ru,uz" &
+    xautolock -time 11 -locker "gnome-screensaver-command -l" -notify 10 -notifier "notify-send -t 5000 -i gtk-dialog-info 'Locking in 10 seconds'" &
+    #per window keyboard layout
+    kbdd &
+
