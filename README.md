@@ -394,7 +394,9 @@ Add following shortcuts to xmonad.hs
          , ((myModMask .|. shiftMask, xK_s), spawn "systemctl suspend")
          -- hibernate with Mod + Shift + h
          , ((myModMask .|. shiftMask, xK_h), spawn "sudo systemctl hibernate")
-       ]
+         -- lock screen with Mod + Shift + l
+         , ((myModMask .|. shiftMask, xK_l), spawn "gnome-screensaver-command -l")
+       ]
 
 Also, add permission to sudoers:
 
