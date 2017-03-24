@@ -370,6 +370,7 @@ https://github.com/davidbrewer/xmonad-ubuntu-conf
 
 Adding multiple language support:
 
+::: Moved to xmonad configuration, no .xsessionrc file --------------
 In .xsessionrc add language config
 
     #!/usr/bin/env bash
@@ -380,6 +381,7 @@ In .xsessionrc add language config
     xautolock -time 11 -locker "gnome-screensaver-command -l" -notify 10   -notifier "notify-send -t 5000 -i gtk-dialog-info 'Locking in 10 seconds'" &
     yakuake &
 
+::: ------------------------------------------------------------------
 
 To show keyboard indicator on top bar:
 http://askubuntu.com/a/561596
