@@ -355,7 +355,7 @@ run one you hit "enter" on the line
  - To use markers: `ma` mark top of block to indent as marker 'a'  
 ...move cursor to end location  
 `>'a`    Indent from marker 'a' to current location  
-e='a` to reindent.
+e='a' to reindent.
 
 
 #####Opening files 
@@ -417,3 +417,8 @@ To autostart add the following to ~.xmonad/startup-hook
     #to find out monitor name, run xrandr with no argument; also, arandr is handy
     xrandr --output eDP1 --mode 1600x900 &
 
+Gogland shortcuts
+===========
+Shift + Ctrl + A: find action.
+Alt+Home: access navigation bar.
+Shift + Ctrl + F12: hide tool windows.
