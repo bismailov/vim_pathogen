@@ -423,3 +423,4 @@ Gogland shortcuts
 * Shift + Ctrl + A: find action.
 * Alt+Home: access navigation bar.
 * Shift + Ctrl + F12: hide tool windows.
+* Ctrl+Shift+Space: smart completion.
