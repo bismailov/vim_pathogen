@@ -420,6 +420,6 @@ To autostart add the following to ~.xmonad/startup-hook
 
 Gogland shortcuts
 ===========
-Shift + Ctrl + A: find action.
-Alt+Home: access navigation bar.
-Shift + Ctrl + F12: hide tool windows.
+* Shift + Ctrl + A: find action.
+* Alt+Home: access navigation bar.
+* Shift + Ctrl + F12: hide tool windows.
