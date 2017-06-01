@@ -10,6 +10,7 @@
     * [For consideration](#for-consideration)
   * [Vim shortcuts](#vim-shortcuts)
   * [XMonad](#xmonad)
+  * [Gogland shortcuts](#gogland-shortcuts)
 
 
 Vim configuration
