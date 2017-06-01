@@ -425,3 +425,4 @@ Gogland shortcuts
 * Shift + Ctrl + F12: hide tool windows.
 * Ctrl+Shift+Space: smart completion.
 * Ctrl+Space / Ctrl+Alt+Space: code completion.
+* Ctrl+Shift+Enter: smart Enter (statement completion).
