@@ -426,3 +426,11 @@ Gogland shortcuts
 * Ctrl+Shift+Space: smart completion.
 * Ctrl+Space / Ctrl+Alt+Space: code completion.
 * Ctrl+Shift+Enter: smart Enter (statement completion).
+* Ctrl+Shift+E: recently edited files list.
+* Ctrl+Shift+N: Navigate -> File.
+* Ctrl+Shift+E: recently edited files list.
+* Ctrl+Shift+I: quick definition.
+* Ctrl+Shift+P: finding out type of expression.
+
+
+
