@@ -420,9 +420,10 @@ To autostart add the following to ~.xmonad/startup-hook
 
 Gogland shortcuts
 ===========
+* Shift+Enter: move to next line.
 * Shift+Ctrl+A: find action.
 * Alt+Home: access navigation bar.
-* Shift + Ctrl + F12: hide tool windows.
+* Shift+Ctrl+F12: hide tool windows.
 * Ctrl+Shift+Space: smart completion.
 * Ctrl+Space / Ctrl+Alt+Space: code completion.
 * Ctrl+Shift+Enter: smart Enter (statement completion).
@@ -430,6 +431,8 @@ Gogland shortcuts
 * Ctrl+Shift+N: Navigate -> File.
 * Ctrl+Shift+E: recently edited files list.
 * Ctrl+Shift+I: quick definition.
+* Ctrl+Click: go to definition.
+* Ctrl+Hover: see arguments.
 * Ctrl+Shift+P: finding out type of expression.
 
 
