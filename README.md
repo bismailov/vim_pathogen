@@ -434,6 +434,7 @@ Gogland shortcuts
 * Ctrl+Click: go to definition.
 * Ctrl+Hover: see arguments.
 * Ctrl+Shift+P: finding out type of expression.
+* Ctrl+F5: rerun debugger config.
 
 
 
