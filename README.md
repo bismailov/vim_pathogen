@@ -435,6 +435,7 @@ Gogland shortcuts
 * Ctrl+Hover: see arguments.
 * Ctrl+Shift+P: finding out type of expression.
 * Ctrl+F5: rerun debugger config.
+* Alt+F12: move to terminal.
 
 
 
