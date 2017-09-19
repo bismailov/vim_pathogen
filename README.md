@@ -436,6 +436,6 @@ Gogland shortcuts
 * Ctrl+Shift+P: finding out type of expression.
 * Ctrl+F5: rerun debugger config.
 * Alt+F12: move to terminal.
-
+* Ctrl+Shift+F, double Shift: global searches
 
 
