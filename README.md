@@ -12,6 +12,7 @@
   * [XMonad](#xmonad)
   * [Gogland shortcuts](#gogland-shortcuts)
 
+Using http://ohmyz.sh/
 
 Vim configuration
 =================
