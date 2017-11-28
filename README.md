@@ -14,8 +14,8 @@
   
 ------------------
 
-Using http://ohmyz.sh/ (2017-11-27) \\
-Installation: https://www.youtube.com/watch?v=ADytC9a2g2Y \\ 
+Using http://ohmyz.sh/ (2017-11-27)  
+Installation: https://www.youtube.com/watch?v=ADytC9a2g2Y  
 Configuring themes and fonts: https://www.youtube.com/watch?v=XSeO6nnlWHw
 
 Vim configuration
